@@ -1,4 +1,4 @@
-# bluewery
+# bluewery.vim
 
 :beer: Blue-based color vim colorscheme
 
@@ -12,15 +12,14 @@
 
 ## Gallery
 
-
-![sample](./misc/figures/Sample.png')
+![sample](./misc/figures/Sample.png)
 
 | Mode | Status line image |
 | ---  | ---               |
-| NORMAL| ![normal](./misc/figures/NORMAL.png') |
-| INSERT| ![normal](./misc/figures/INSERT.png') |
-| VISUAL| ![normal](./misc/figures/VISUAL.png') |
-| REPLACE| ![normal](./misc/figures/REPLACE.png') |
+| NORMAL| ![normal](./misc/figures/NORMAL.png) |
+| INSERT| ![normal](./misc/figures/INSERT.png) |
+| VISUAL| ![normal](./misc/figures/VISUAL.png) |
+| REPLACE| ![normal](./misc/figures/REPLACE.png) |
 
 ## Thanks
 
