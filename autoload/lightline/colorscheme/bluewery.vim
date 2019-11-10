@@ -14,8 +14,8 @@
 " License:    MIT
 "
 
-let s:save_cpo = &cpo
-set cpo&vim
+let s:save_cpo = &cpoptions
+set cpoptions&vim
 
 let s:n_black   = [0, '#072429']
 let s:n_red     = [1, '#fc5185']
@@ -104,5 +104,5 @@ endfunction
 
 let g:lightline#colorscheme#bluewery#palette = s:build_palette()
 
-let &cpo = s:save_cpo
+let &cpoptions = s:save_cpo
 unlet s:save_cpo
