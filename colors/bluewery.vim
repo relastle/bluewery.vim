@@ -95,9 +95,9 @@ call s:my_hi('CursorLineNr' , ''     , n_white   , '')
 call s:my_hi('VertSplit'    , ''     , n_black , '')
 
 call s:my_hi('PmenuSbar'    , ''     , ''        , n_cyan)
-call s:my_hi('PmenuThumb'   , ''     , ''        , n_blue)
-call s:my_hi('Pmenu'        , ''     , n_white   , n_blue)
-call s:my_hi('PmenuSel'     , ''     , b_black     , n_cyan)
+call s:my_hi('PmenuThumb'   , ''     , ''        , n_black)
+call s:my_hi('Pmenu'        , ''     , n_white   , n_black)
+call s:my_hi('PmenuSel'     , ''     , b_white   , n_blue)
 
 call s:my_hi('Directory'    , ''     , b_blue    , '')
 call s:my_hi('Type'         , '' , b_cyan    , '')
