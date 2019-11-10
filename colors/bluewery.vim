@@ -109,6 +109,7 @@ call s:my_hi('Error'            , '' , b_red     , none_color)
 call s:my_hi('ErrorMsg'         , '' , b_red     , none_color)
 call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
 call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
+call s:my_hi('ExtraWhitespace'  , '' , ''        , n_red)
 
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd'  , '' , ''        , n_black)
@@ -121,8 +122,10 @@ hi! link snipLeadingSpaces Normal
 call s:my_hi('goImport'   , ''     , n_red  , '')
 
 " For ALE
-call s:my_hi('ALEWarningSign'   , ''     , n_yellow  , '')
-call s:my_hi('ALEErrorSign'   , ''     , n_red  , '')
+call s:my_hi('ALEWarningSign' , '' , n_yellow   , '')
+call s:my_hi('ALEErrorSign'   , '' , n_red      , '')
+call s:my_hi('ALEError'       , '' , none_color , '')
+call s:my_hi('ALEWarning'     , '' , none_color , '')
 
 
 if has('nvim')
