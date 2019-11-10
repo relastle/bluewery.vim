@@ -28,7 +28,7 @@ let n_white   = [7, '#c4c7c7']
 
 let b_black   = [8, '#142c30']
 let b_red     = [9, '#fc81a5']
-let b_green   = [10, '#234444']
+let b_green   = [10, '#233439']
 let b_yellow  = [11, '#DF7353']
 let b_blue    = [12, '#6FaEaF']
 let b_magenta = [13, '#364f6b']
@@ -98,7 +98,7 @@ call s:my_hi('VertSplit'        , '' , n_black   , '')
 
 call s:my_hi('PmenuSbar'        , '' , ''        , n_cyan)
 call s:my_hi('PmenuThumb'       , '' , ''        , n_black)
-call s:my_hi('Pmenu'            , '' , n_white   , n_black)
+call s:my_hi('Pmenu'            , '' , n_white   , b_green)
 call s:my_hi('PmenuSel'         , '' , b_white   , n_blue)
 
 call s:my_hi('Directory'        , '' , b_blue    , '')

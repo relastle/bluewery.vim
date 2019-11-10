@@ -35,7 +35,7 @@ you terminal as following color pallete.
 |---             |---       |---                                                        |---             |---       |---                                                        |
 |black (normal)  |`#072429` |![#072429](https://placehold.it/50x20/072429/000000?text=+)|black (bright)  |`#142c30` |![#142c30](https://placehold.it/50x20/142c30/000000?text=+)|
 |red (normal)    |`#fc5185` |![#fc5185](https://placehold.it/50x20/fc5185/000000?text=+)|red (bright)    |`#fc81a5` |![#fc81a5](https://placehold.it/50x20/fc81a5/000000?text=+)|
-|green (normal)  |`#5AC6A1` |![#5AC6A1](https://placehold.it/50x20/5AC6A1/000000?text=+)|green (bright)  |`#234444` |![#234444](https://placehold.it/50x20/234444/000000?text=+)|
+|green (normal)  |`#5AC6A1` |![#5AC6A1](https://placehold.it/50x20/5AC6A1/000000?text=+)|green (bright)  |`#233439` |![#233439](https://placehold.it/50x20/233439/000000?text=+)|
 |yellow (normal) |`#fff1ac` |![#fff1ac](https://placehold.it/50x20/fff1ac/000000?text=+)|yellow (bright) |`#DF7353` |![#DF7353](https://placehold.it/50x20/DF7353/000000?text=+)|
 |blue (normal)   |`#296873` |![#296873](https://placehold.it/50x20/296873/000000?text=+)|blue (bright)   |`#6FaEaF` |![#6FaEaF](https://placehold.it/50x20/6FaEaF/000000?text=+)|
 |magenta (normal)|`#85919b` |![#85919b](https://placehold.it/50x20/85919b/000000?text=+)|magenta (bright)|`#364f6b` |![#364f6b](https://placehold.it/50x20/364f6b/000000?text=+)|

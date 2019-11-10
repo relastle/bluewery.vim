@@ -28,7 +28,7 @@ let s:n_white   = [7, '#c4c7c7']
 
 let s:b_black   = [8, '#142c30']
 let s:b_red     = [9, '#fc81a5']
-let s:b_green   = [10, '#234444']
+let s:b_green   = [10, '#233439']
 let s:b_yellow  = [11, '#DF7353']
 let s:b_blue    = [12, '#6FaEaF']
 let s:b_magenta = [13, '#364f6b']
