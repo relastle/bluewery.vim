@@ -35,7 +35,7 @@ let b_magenta = [13, '#364f6b']
 let b_cyan    = [14, '#94e7e7']
 let b_white   = [15, '#dafafc']
 
-let none   = [NONE, NONE]
+let none_color   = ['NONE', 'NONE']
 
 function! s:my_hi(item, attr, fg_color_name, bg_color_name) abort
   if empty(a:attr) && empty(a:bg_color_name)
@@ -105,10 +105,10 @@ call s:my_hi('Directory'        , '' , b_blue    , '')
 call s:my_hi('Type'             , '' , b_cyan    , '')
 call s:my_hi('Include'          , '' , n_red     , '')
 
-call s:my_hi('Error'            , '' , b_red     , none)
-call s:my_hi('ErrorMsg'         , '' , b_red     , none)
-call s:my_hi('WarningMsg'       , '' , n_yellow  , none)
-call s:my_hi('WarningMsg'       , '' , n_yellow  , none)
+call s:my_hi('Error'            , '' , b_red     , none_color)
+call s:my_hi('ErrorMsg'         , '' , b_red     , none_color)
+call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
+call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
 
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd'  , '' , ''        , n_black)
