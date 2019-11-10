@@ -70,7 +70,7 @@ let g:colors_name = 'bluewery'
 " Basic Settings
 call s:my_hi('Normal'     , ''     , n_white   , b_black)
 call s:my_hi('Comment'    , ''     , b_green , '')
-call s:my_hi('Statement'  , 'NONE' , b_cyan    , '')
+call s:my_hi('Statement'  , '' , b_cyan    , '')
 call s:my_hi('Function'   , ''     , n_cyan    , '')
 call s:my_hi('Identifier' , ''     , b_blue    , '')
 call s:my_hi('Constant'   , ''     , n_magenta , '')
@@ -79,7 +79,7 @@ call s:my_hi('PreProc'    , ''     , n_red     , '')
 call s:my_hi('String'     , ''     , n_green   , '')
 call s:my_hi('Delimiter'  , ''     , n_magenta , '')
 call s:my_hi('Title'      , ''     , n_cyan    , '')
-call s:my_hi('NonText'    , 'NONE' , n_magenta , '')
+call s:my_hi('NonText'    , '' , n_magenta , '')
 call s:my_hi('Search'     , ''     , ''        , n_yellow)
 call s:my_hi('Special'    , ''     , b_yellow  , '')
 
@@ -99,7 +99,7 @@ call s:my_hi('Pmenu'        , ''     , n_white   , n_blue)
 call s:my_hi('PmenuSel'     , ''     , b_black     , n_cyan)
 
 call s:my_hi('Directory'    , ''     , n_blue    , '')
-call s:my_hi('Type'         , 'None' , b_cyan    , '')
+call s:my_hi('Type'         , '' , b_cyan    , '')
 call s:my_hi('Include'      , ''     , n_red     , '')
 
 call s:my_hi('Error'        , ''     , b_red     , '')
