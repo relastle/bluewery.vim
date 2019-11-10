@@ -6,7 +6,7 @@ from color/bluewery.vim source code.
 
 import argparse
 import re
-from pprint import pprint as pp
+from pprint import pprint as pp  # noqa
 from typing import (  # noqa
         Any,
         List,
@@ -18,8 +18,8 @@ from typing import (  # noqa
 color_map: Dict[int, str] = {
     0: 'black',
     1: 'red',
-    2: 'yellow',
-    3: 'green',
+    2: 'green',
+    3: 'yellow',
     4: 'blue',
     5: 'magenta',
     6: 'cyan',
