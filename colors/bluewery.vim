@@ -16,6 +16,7 @@
 
 " Below are visual identity of this color scheme
 "
+
 let n_black   = [0, '#072429']
 let n_red     = [1, '#fc5185']
 let n_green   = [2, '#5AC6A1']
@@ -109,7 +110,7 @@ call s:my_hi('WarningMsg'   , ''     , n_yellow  , '')
 
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd', '' , '', n_black)
-call s:my_hi('IndentGuidesEven', '' , '' , n_blue)
+call s:my_hi('IndentGuidesEven', '' , '' , b_green)
 
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
