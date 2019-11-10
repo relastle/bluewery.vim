@@ -103,10 +103,10 @@ call s:my_hi('Directory'    , ''     , b_blue    , '')
 call s:my_hi('Type'         , '' , b_cyan    , '')
 call s:my_hi('Include'      , ''     , n_red     , '')
 
-call s:my_hi('Error'        , ''     , b_red     , '')
-call s:my_hi('ErrorMsg'     , ''     , b_red     , '')
-call s:my_hi('WarningMsg'   , ''     , n_yellow  , '')
-call s:my_hi('WarningMsg'   , ''     , n_yellow  , '')
+call s:my_hi('Error'        , ''     , b_red     , 'NONE')
+call s:my_hi('ErrorMsg'     , ''     , b_red     , 'NONE')
+call s:my_hi('WarningMsg'   , ''     , n_yellow  , 'NONE')
+call s:my_hi('WarningMsg'   , ''     , n_yellow  , 'NONE')
 
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd', '' , '', n_black)
@@ -117,6 +117,10 @@ hi! link snipLeadingSpaces Normal
 
 " For Golang
 call s:my_hi('goImport'   , ''     , n_red  , '')
+
+" For ALE
+call s:my_hi('ALEWarningSign'   , ''     , n_yellow  , '')
+call s:my_hi('ALEErrorSign'   , ''     , n_red  , '')
 
 
 if has('nvim')
