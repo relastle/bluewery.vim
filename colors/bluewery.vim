@@ -20,16 +20,16 @@ let n_black   = [0, '#072429']
 let n_red     = [1, '#fc5185']
 let n_green   = [2, '#5AC6A1']
 let n_yellow  = [3, '#fff1ac']
-let n_blue    = [4, '#254750']
+let n_blue    = [4, '#296873']
 let n_magenta = [5, '#85919b']
 let n_cyan    = [6, '#04a7a7']
 let n_white   = [7, '#c4c7c7']
 
 let b_black   = [8, '#142c30']
 let b_red     = [9, '#fc81a5']
-let b_green   = [10, '#236b64']
+let b_green   = [10, '#234444']
 let b_yellow  = [11, '#DF7353']
-let b_blue    = [12, '#5F9E9F']
+let b_blue    = [12, '#6FaEaF']
 let b_magenta = [13, '#364f6b']
 let b_cyan    = [14, '#94e7e7']
 let b_white   = [15, '#dafafc']
@@ -66,10 +66,9 @@ endif
 
 let g:colors_name = 'bluewery'
 
-
 " Basic Settings
 call s:my_hi('Normal'     , ''     , n_white   , b_black)
-call s:my_hi('Comment'    , ''     , b_green , '')
+call s:my_hi('Comment'    , ''     , n_blue , '')
 call s:my_hi('Statement'  , '' , b_cyan    , '')
 call s:my_hi('Function'   , ''     , n_cyan    , '')
 call s:my_hi('Identifier' , ''     , b_blue    , '')
@@ -82,6 +81,7 @@ call s:my_hi('Title'      , ''     , n_cyan    , '')
 call s:my_hi('NonText'    , '' , n_magenta , '')
 call s:my_hi('Search'     , ''     , ''        , n_yellow)
 call s:my_hi('Special'    , ''     , b_yellow  , '')
+call s:my_hi('Visual'    , ''     , ''  , b_magenta)
 
 call s:my_hi('Cursor'       , ''     , b_white   , n_black)
 call s:my_hi('CursorLine'   , ''     , ''        , n_black)
@@ -98,7 +98,7 @@ call s:my_hi('PmenuThumb'   , ''     , ''        , n_blue)
 call s:my_hi('Pmenu'        , ''     , n_white   , n_blue)
 call s:my_hi('PmenuSel'     , ''     , b_black     , n_cyan)
 
-call s:my_hi('Directory'    , ''     , n_blue    , '')
+call s:my_hi('Directory'    , ''     , b_blue    , '')
 call s:my_hi('Type'         , '' , b_cyan    , '')
 call s:my_hi('Include'      , ''     , n_red     , '')
 
