@@ -127,6 +127,9 @@ call s:my_hi('ALEErrorSign'   , '' , n_red      , '')
 call s:my_hi('ALEError'       , '' , none_color , '')
 call s:my_hi('ALEWarning'     , '' , none_color , '')
 
+" For vim-illuminate
+call s:my_hi('illuminatedWord'     , '' , none_color , n_blue)
+
 
 if has('nvim')
   let g:terminal_color_0  = n_black[1]
