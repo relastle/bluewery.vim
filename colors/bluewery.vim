@@ -120,11 +120,15 @@ call s:my_hi('ExtraWhitespace'  , '' , ''        , n_red)
 call s:my_hi('IndentGuidesOdd'  , '' , ''        , n_black)
 call s:my_hi('IndentGuidesEven' , '' , ''        , b_green)
 
+
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
 
 " For Golang
 call s:my_hi('goImport'   , ''     , n_red  , '')
+
+" For Vimscript
+call s:my_hi('vimIsCommand'   , ''     , n_cyan , '')
 
 " For ALE
 call s:my_hi('ALEWarningSign' , '' , n_yellow   , '')
