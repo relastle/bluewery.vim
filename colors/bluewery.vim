@@ -87,6 +87,9 @@ call s:my_hi('Search'     , '' , ''        , n_yellow)
 call s:my_hi('Special'    , '' , b_yellow  , '')
 call s:my_hi('Visual'     , '' , ''        , b_magenta)
 
+call s:my_hi('StatusLine' , '' , b_green   , b_cyan)
+call s:my_hi('WildMenu'   , '' , b_green   , n_magenta)
+
 call s:my_hi('Cursor'           , '' , b_white   , n_black)
 call s:my_hi('CursorLine'       , '' , ''        , n_black)
 call s:my_hi('CursorColumn'     , '' , ''        , n_black)
