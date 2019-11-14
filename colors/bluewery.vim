@@ -97,7 +97,7 @@ call s:my_hi('CursorColumn'     , '' , ''        , n_black)
 
 call s:my_hi('SignColumn'       , '' , ''        , n_black)
 
-call s:my_hi('LineNr'           , '' , b_magenta , '')
+call s:my_hi('LineNr'           , '' , n_blue , n_black)
 call s:my_hi('CursorLineNr'     , '' , n_white   , '')
 call s:my_hi('VertSplit'        , '' , n_black   , '')
 
