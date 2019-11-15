@@ -18,7 +18,7 @@
 "
 
 let n_black   = [0, '#07242c']
-let n_red     = [1, '#fc5185']
+let n_red     = [1, '#fc6195']
 let n_green   = [2, '#5AC6A1']
 let n_yellow  = [3, '#fff1ac']
 let n_blue    = [4, '#296873']
