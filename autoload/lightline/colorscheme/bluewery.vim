@@ -17,8 +17,8 @@
 let s:save_cpo = &cpoptions
 set cpoptions&vim
 
-let s:n_black   = [0, '#072429']
-let s:n_red     = [1, '#fc5185']
+let s:n_black   = [0, '#07242c']
+let s:n_red     = [1, '#fc6195']
 let s:n_green   = [2, '#5AC6A1']
 let s:n_yellow  = [3, '#fff1ac']
 let s:n_blue    = [4, '#296873']
@@ -26,7 +26,7 @@ let s:n_magenta = [5, '#85919b']
 let s:n_cyan    = [6, '#04a7a7']
 let s:n_white   = [7, '#c4c7c7']
 
-let s:b_black   = [8, '#142c30']
+let s:b_black   = [8, '#142c35']
 let s:b_red     = [9, '#fc81a5']
 let s:b_green   = [10, '#233439']
 let s:b_yellow  = [11, '#DF7353']
