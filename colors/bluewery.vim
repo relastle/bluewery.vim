@@ -88,6 +88,8 @@ call s:my_hi('Search'     , '' , ''        , n_yellow)
 call s:my_hi('Special'    , '' , b_yellow  , '')
 call s:my_hi('Visual'     , '' , ''        , b_magenta)
 
+call s:my_hi('Folded'     , '' , b_yellow        , n_blue)
+
 call s:my_hi('StatusLine' , '' , b_green   , b_cyan)
 call s:my_hi('WildMenu'   , '' , b_green   , n_magenta)
 
