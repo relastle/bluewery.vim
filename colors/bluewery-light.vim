@@ -17,23 +17,23 @@
 " Below are visual identity of this color scheme
 "
 
-let n_black   = [0, '#07242c']
-let n_red     = [1, '#fc6195']
-let n_green   = [2, '#5AC6A1']
-let n_yellow  = [3, '#fff1ac']
-let n_blue    = [4, '#296873']
-let n_magenta = [5, '#85919b']
-let n_cyan    = [6, '#04a7a7']
-let n_white   = [7, '#c4c7c7']
+let s:n_black   = [0, '#07242c']
+let s:n_red     = [1, '#aa0f33']
+let s:n_green   = [2, '#06621d']
+let s:n_yellow  = [3, '#dacc87']
+let s:n_blue    = [4, '#14535e']
+let s:n_magenta = [5, '#48545e']
+let s:n_cyan    = [6, '#007d7d']
+let s:n_white   = [7, '#597c7c']
 
-let b_black   = [8, '#142c35']
-let b_red     = [9, '#fc81a5']
-let b_green   = [10, '#233439']
-let b_yellow  = [11, '#DF7353']
-let b_blue    = [12, '#6FaEaF']
-let b_magenta = [13, '#364f6b']
-let b_cyan    = [14, '#94e7e7']
-let b_white   = [15, '#caeaec']
+let s:b_black   = [8, '#142c35']
+let s:b_red     = [9, '#fc81a5']
+let s:b_green   = [10, '#233439']
+let s:b_yellow  = [11, '#a83c1c']
+let s:b_blue    = [12, '#155455']
+let s:b_magenta = [13, '#2d4662']
+let s:b_cyan    = [14, '#297c7c']
+let s:b_white   = [15, '#798986']
 
 let none_color   = ['NONE', 'NONE']
 
@@ -67,102 +67,102 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'bluewery'
+let g:colors_name = 'bluewery-light'
 
 " Basic Settings
-call s:my_hi('Normal'     , '' , n_black   , b_white)
-call s:my_hi('Comment'    , '' , n_blue    , '')
-call s:my_hi('Statement'  , '' , b_cyan    , '')
-call s:my_hi('Function'   , '' , n_cyan    , '')
-call s:my_hi('Identifier' , '' , b_blue    , '')
-call s:my_hi('Constant'   , '' , n_magenta , '')
-call s:my_hi('Operator'   , '' , b_yellow  , '')
-call s:my_hi('PreProc'    , '' , n_red     , '')
-call s:my_hi('String'     , '' , n_green   , '')
-call s:my_hi('Delimiter'  , '' , n_magenta , '')
-call s:my_hi('Title'      , '' , n_cyan    , '')
-call s:my_hi('Underlined' , '' , b_red  , '')
-call s:my_hi('NonText'    , '' , n_magenta , '')
-call s:my_hi('Todo'       , '' , b_yellow , none_color)
-call s:my_hi('Search'     , '' , ''        , n_yellow)
-call s:my_hi('Special'    , '' , b_yellow  , '')
-call s:my_hi('Visual'     , '' , ''        , b_magenta)
+call s:my_hi('Normal'     , '' , s:n_black   , s:b_white)
+call s:my_hi('Comment'    , '' , s:n_blue    , '')
+call s:my_hi('Statement'  , '' , s:b_cyan    , '')
+call s:my_hi('Function'   , '' , s:n_cyan    , '')
+call s:my_hi('Identifier' , '' , s:b_blue    , '')
+call s:my_hi('Constant'   , '' , s:n_magenta , '')
+call s:my_hi('Operator'   , '' , s:b_yellow  , '')
+call s:my_hi('PreProc'    , '' , s:n_red     , '')
+call s:my_hi('String'     , '' , s:n_green   , '')
+call s:my_hi('Delimiter'  , '' , s:n_magenta , '')
+call s:my_hi('Title'      , '' , s:n_cyan    , '')
+call s:my_hi('Underlined' , '' , s:b_red  , '')
+call s:my_hi('NonText'    , '' , s:n_magenta , '')
+call s:my_hi('Todo'       , '' , s:b_yellow , none_color)
+call s:my_hi('Search'     , '' , ''        , s:n_yellow)
+call s:my_hi('Special'    , '' , s:b_yellow  , '')
+call s:my_hi('Visual'     , '' , ''        , s:b_magenta)
 
-call s:my_hi('Folded'     , '' , b_yellow        , n_blue)
+call s:my_hi('Folded'     , '' , s:b_yellow        , s:n_blue)
 
-call s:my_hi('StatusLine' , '' , b_green   , b_cyan)
-call s:my_hi('WildMenu'   , '' , b_green   , n_magenta)
+call s:my_hi('StatusLine' , '' , s:b_green   , s:b_cyan)
+call s:my_hi('WildMenu'   , '' , s:b_green   , s:n_magenta)
 
-call s:my_hi('Cursor'           , '' , b_black   , n_white)
-call s:my_hi('CursorLine'       , '' , ''        , n_white)
-call s:my_hi('CursorColumn'     , '' , ''        , n_white)
+call s:my_hi('Cursor'           , '' , s:b_black   , s:n_black)
+call s:my_hi('CursorLine'       , '' , ''        , s:n_white)
+call s:my_hi('CursorColumn'     , '' , ''        , s:n_white)
 
-call s:my_hi('SignColumn'       , '' , ''        , n_white)
+call s:my_hi('SignColumn'       , '' , ''        , s:n_white)
 
-call s:my_hi('LineNr'           , '' , n_blue , n_white)
-call s:my_hi('CursorLineNr'     , '' , n_black   , '')
-call s:my_hi('VertSplit'        , '' , n_white   , '')
+call s:my_hi('LineNr'           , '' , s:n_blue , s:n_white)
+call s:my_hi('CursorLineNr'     , '' , s:n_black   , '')
+call s:my_hi('VertSplit'        , '' , s:n_white   , '')
 
-call s:my_hi('PmenuSbar'        , '' , ''        , n_cyan)
-call s:my_hi('PmenuThumb'       , '' , ''        , n_white)
-call s:my_hi('Pmenu'            , '' , n_black   , b_green)
-call s:my_hi('PmenuSel'         , '' , b_black   , n_blue)
+call s:my_hi('PmenuSbar'        , '' , ''        , s:n_cyan)
+call s:my_hi('PmenuThumb'       , '' , ''        , s:n_white)
+call s:my_hi('Pmenu'            , '' , s:n_black   , s:b_green)
+call s:my_hi('PmenuSel'         , '' , s:b_black   , s:n_blue)
 
-call s:my_hi('Directory'        , '' , b_blue    , '')
-call s:my_hi('Type'             , '' , b_cyan    , '')
-call s:my_hi('Include'          , '' , n_red     , '')
+call s:my_hi('Directory'        , '' , s:b_blue    , '')
+call s:my_hi('Type'             , '' , s:b_cyan    , '')
+call s:my_hi('Include'          , '' , s:n_red     , '')
 
-call s:my_hi('Error'            , '' , b_red     , none_color)
-call s:my_hi('ErrorMsg'         , '' , b_red     , none_color)
-call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
-call s:my_hi('WarningMsg'       , '' , n_yellow  , none_color)
-call s:my_hi('ExtraWhitespace'  , '' , ''        , n_red)
+call s:my_hi('Error'            , '' , s:b_red     , none_color)
+call s:my_hi('ErrorMsg'         , '' , s:b_red     , none_color)
+call s:my_hi('WarningMsg'       , '' , s:n_yellow  , none_color)
+call s:my_hi('WarningMsg'       , '' , s:n_yellow  , none_color)
+call s:my_hi('ExtraWhitespace'  , '' , ''        , s:n_red)
 
 " For 'nathanaelkane/vim-indent-guides'
-call s:my_hi('IndentGuidesOdd'  , '' , ''        , n_white)
-call s:my_hi('IndentGuidesEven' , '' , ''        , b_green)
+call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:n_white)
+call s:my_hi('IndentGuidesEven' , '' , ''        , s:b_green)
 
 
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
 
 " For Golang
-call s:my_hi('goImport'   , ''     , n_red  , '')
+call s:my_hi('goImport'   , ''     , s:n_red  , '')
 
 " For Vimscript
-call s:my_hi('vimIsCommand'   , ''     , n_cyan , '')
+call s:my_hi('vimIsCommand'   , ''     , s:n_cyan , '')
 
 " For ALE
-call s:my_hi('ALEWarningSign' , '' , n_yellow   , '')
-call s:my_hi('ALEErrorSign'   , '' , n_red      , '')
+call s:my_hi('ALEWarningSign' , '' , s:n_yellow   , '')
+call s:my_hi('ALEErrorSign'   , '' , s:n_red      , '')
 call s:my_hi('ALEError'       , '' , none_color , '')
 call s:my_hi('ALEWarning'     , '' , none_color , '')
 
 " For vim-illuminate
-call s:my_hi('illuminatedWord'     , '' , none_color , n_blue)
+call s:my_hi('illuminatedWord'     , '' , none_color , s:n_blue)
 
 
 if has('nvim')
-  let g:terminal_color_0  = n_black[1]
-  let g:terminal_color_1  = n_red[1]
-  let g:terminal_color_2  = n_green[1]
-  let g:terminal_color_3  = n_yellow[1]
-  let g:terminal_color_4  = n_blue[1]
-  let g:terminal_color_5  = n_magenta[1]
-  let g:terminal_color_6  = n_cyan[1]
-  let g:terminal_color_7  = n_white[1]
+  let g:terminal_color_0  = s:n_black[1]
+  let g:terminal_color_1  = s:n_red[1]
+  let g:terminal_color_2  = s:n_green[1]
+  let g:terminal_color_3  = s:n_yellow[1]
+  let g:terminal_color_4  = s:n_blue[1]
+  let g:terminal_color_5  = s:n_magenta[1]
+  let g:terminal_color_6  = s:n_cyan[1]
+  let g:terminal_color_7  = s:n_white[1]
 
-  let g:terminal_color_8  = b_black[1]
-  let g:terminal_color_9  = b_red[1]
-  let g:terminal_color_10 = b_green[1]
-  let g:terminal_color_11 = b_yellow[1]
-  let g:terminal_color_12 = b_blue[1]
-  let g:terminal_color_13 = b_magenta[1]
-  let g:terminal_color_14 = b_cyan[1]
-  let g:terminal_color_15 = b_white[1]
+  let g:terminal_color_8  = s:b_black[1]
+  let g:terminal_color_9  = s:b_red[1]
+  let g:terminal_color_10 = s:b_green[1]
+  let g:terminal_color_11 = s:b_yellow[1]
+  let g:terminal_color_12 = s:b_blue[1]
+  let g:terminal_color_13 = s:b_magenta[1]
+  let g:terminal_color_14 = s:b_cyan[1]
+  let g:terminal_color_15 = s:b_white[1]
 else
   let g:terminal_ansi_colors = [
-        \ n_black[1], n_red[1], n_green[1], n_yellow[1], n_blue[1], n_magenta[1], n_cyan[1], n_white[1],
-        \ b_black[1], b_red[1], b_green[1], b_yellow[1], b_blue[1], b_magenta[1], b_cyan[1], b_white[1],
+        \ s:n_black[1], s:n_red[1], s:n_green[1], s:n_yellow[1], s:n_blue[1], s:n_magenta[1], s:n_cyan[1], s:n_white[1],
+        \ s:b_black[1], s:b_red[1], s:b_green[1], s:b_yellow[1], s:b_blue[1], s:b_magenta[1], s:b_cyan[1], s:b_white[1],
         \ ]
 endif
