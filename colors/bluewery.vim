@@ -70,76 +70,77 @@ endif
 let g:colors_name = 'bluewery'
 
 " Basic Settings
-call s:my_hi('Normal'     , '' , s:n_white   , s:b_black)
-call s:my_hi('Comment'    , '' , s:n_blue    , '')
-call s:my_hi('Statement'  , '' , s:b_cyan    , '')
-call s:my_hi('Function'   , '' , s:n_cyan    , '')
-call s:my_hi('Identifier' , '' , s:b_blue    , '')
-call s:my_hi('Constant'   , '' , s:n_magenta , '')
-call s:my_hi('Operator'   , '' , s:b_yellow  , '')
-call s:my_hi('PreProc'    , '' , s:n_red     , '')
-call s:my_hi('String'     , '' , s:n_green   , '')
-call s:my_hi('Delimiter'  , '' , s:n_magenta , '')
-call s:my_hi('Title'      , '' , s:n_cyan    , '')
-call s:my_hi('Underlined' , '' , s:b_red  , '')
-call s:my_hi('NonText'    , '' , s:n_magenta , '')
-call s:my_hi('Todo'       , '' , s:b_yellow , none_color)
-call s:my_hi('Search'     , '' , ''        , s:n_yellow)
-call s:my_hi('Special'    , '' , s:b_yellow  , '')
-call s:my_hi('Visual'     , '' , ''        , s:b_magenta)
+call s:my_hi('Normal',           '', s:n_white,   s:b_black)
+call s:my_hi('Comment',          '', s:n_blue,    '')
+call s:my_hi('Statement',        '', s:b_cyan,    '')
+call s:my_hi('Function',         '', s:n_cyan,    '')
+call s:my_hi('Identifier',       '', s:b_blue,    '')
+call s:my_hi('Constant',         '', s:n_magenta, '')
+call s:my_hi('Operator',         '', s:b_yellow,  '')
+call s:my_hi('PreProc',          '', s:n_red,     '')
+call s:my_hi('String',           '', s:n_green,   '')
+call s:my_hi('Delimiter',        '', s:n_magenta, '')
+call s:my_hi('Title',            '', s:n_cyan,    '')
+call s:my_hi('Underlined',       '', s:b_red,     '')
+call s:my_hi('NonText',          '', s:n_magenta, '')
+call s:my_hi('Todo',             '', s:b_yellow,  none_color)
+call s:my_hi('Search',           '', '',          s:n_yellow)
+call s:my_hi('Special',          '', s:b_yellow,  '')
+call s:my_hi('Visual',           '', '',          s:b_magenta)
 
-call s:my_hi('Folded'     , '' , s:b_yellow        , s:n_blue)
+call s:my_hi('Folded',           '', s:b_yellow,  s:n_blue)
 
-call s:my_hi('StatusLine' , '' , s:b_green   , s:b_cyan)
-call s:my_hi('WildMenu'   , '' , s:b_green   , s:n_magenta)
+call s:my_hi('StatusLine',       '', s:b_green,   s:b_cyan)
+call s:my_hi('WildMenu',         '', s:b_green,   s:n_magenta)
+call s:my_hi('ModeMsg',          '', s:n_yellow,  '')
 
-call s:my_hi('Cursor'           , '' , s:b_white   , s:n_black)
-call s:my_hi('CursorLine'       , '' , ''        , s:n_black)
-call s:my_hi('CursorColumn'     , '' , ''        , s:n_black)
+call s:my_hi('Cursor',           '', s:b_white,   s:n_black)
+call s:my_hi('CursorLine',       '', '',          s:n_black)
+call s:my_hi('CursorColumn',     '', '',          s:n_black)
 
-call s:my_hi('SignColumn'       , '' , ''        , s:n_black)
+call s:my_hi('SignColumn',       '', '',          s:n_black)
 
-call s:my_hi('LineNr'           , '' , s:n_blue , s:n_black)
-call s:my_hi('CursorLineNr'     , '' , s:n_white   , '')
-call s:my_hi('VertSplit'        , '' , s:n_black   , '')
+call s:my_hi('LineNr',           '', s:n_blue,    s:n_black)
+call s:my_hi('CursorLineNr',     '', s:n_white,   '')
+call s:my_hi('VertSplit',        '', s:n_black,   '')
 
-call s:my_hi('PmenuSbar'        , '' , ''        , s:n_cyan)
-call s:my_hi('PmenuThumb'       , '' , ''        , s:n_black)
-call s:my_hi('Pmenu'            , '' , s:n_white   , s:b_green)
-call s:my_hi('PmenuSel'         , '' , s:b_white   , s:n_blue)
+call s:my_hi('PmenuSbar',        '', '',          s:n_cyan)
+call s:my_hi('PmenuThumb',       '', '',          s:n_black)
+call s:my_hi('Pmenu',            '', s:n_white,   s:b_green)
+call s:my_hi('PmenuSel',         '', s:b_white,   s:n_blue)
 
-call s:my_hi('Directory'        , '' , s:b_blue    , '')
-call s:my_hi('Type'             , '' , s:b_cyan    , '')
-call s:my_hi('Include'          , '' , s:n_red     , '')
+call s:my_hi('Directory',        '', s:b_blue,    '')
+call s:my_hi('Type',             '', s:b_cyan,    '')
+call s:my_hi('Include',          '', s:n_red,     '')
 
-call s:my_hi('Error'            , '' , s:b_red     , none_color)
-call s:my_hi('ErrorMsg'         , '' , s:b_red     , none_color)
-call s:my_hi('WarningMsg'       , '' , s:n_yellow  , none_color)
-call s:my_hi('WarningMsg'       , '' , s:n_yellow  , none_color)
-call s:my_hi('ExtraWhitespace'  , '' , ''        , s:n_red)
+call s:my_hi('Error',            '', s:b_red,     none_color)
+call s:my_hi('ErrorMsg',         '', s:b_red,     none_color)
+call s:my_hi('WarningMsg',       '', s:n_yellow,  none_color)
+call s:my_hi('WarningMsg',       '', s:n_yellow,  none_color)
+call s:my_hi('ExtraWhitespace',  '', '',          s:n_red)
 
 " For 'nathanaelkane/vim-indent-guides'
-call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:n_black)
-call s:my_hi('IndentGuidesEven' , '' , ''        , s:b_green)
+call s:my_hi('IndentGuidesOdd',  '', '',          s:n_black)
+call s:my_hi('IndentGuidesEven', '', '',          s:b_green)
 
 
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
 
 " For Golang
-call s:my_hi('goImport'   , ''     , s:n_red  , '')
+call s:my_hi('goImport',         '', s:n_red,     '')
 
 " For Vimscript
-call s:my_hi('vimIsCommand'   , ''     , s:n_cyan , '')
+call s:my_hi('vimIsCommand',     '', s:n_cyan,    '')
 
 " For ALE
-call s:my_hi('ALEWarningSign' , '' , s:n_yellow   , '')
-call s:my_hi('ALEErrorSign'   , '' , s:n_red      , '')
-call s:my_hi('ALEError'       , '' , none_color , '')
-call s:my_hi('ALEWarning'     , '' , none_color , '')
+call s:my_hi('ALEWarningSign',   '', s:n_yellow,  '')
+call s:my_hi('ALEErrorSign',     '', s:n_red,     '')
+call s:my_hi('ALEError',         '', none_color,  '')
+call s:my_hi('ALEWarning',       '', none_color,  '')
 
 " For vim-illuminate
-call s:my_hi('illuminatedWord'     , '' , none_color , s:n_blue)
+call s:my_hi('illuminatedWord',  '', none_color,  s:n_blue)
 
 
 if has('nvim')
