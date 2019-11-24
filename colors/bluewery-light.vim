@@ -16,24 +16,24 @@
 
 " Below are visual identity of this color scheme
 "
-
 let s:n_black   = [0, '#07242c']
-let s:n_red     = [1, '#aa0f33']
-let s:n_green   = [2, '#06621d']
-let s:n_yellow  = [3, '#dacc87']
-let s:n_blue    = [4, '#14535e']
-let s:n_magenta = [5, '#48545e']
-let s:n_cyan    = [6, '#007d7d']
-let s:n_white   = [7, '#597c7c']
+let s:n_red     = [1, '#bb627d']
+let s:n_green   = [2, '#4c8d77']
+let s:n_yellow  = [3, '#978f65']
+let s:n_blue    = [4, '#2b5860']
+let s:n_magenta = [5, '#7b8791']
+let s:n_cyan    = [6, '#007777']
+let s:n_white   = [7, '#cdc7b0']
 
-let s:b_black   = [8, '#142c35']
-let s:b_red     = [9, '#fc81a5']
-let s:b_green   = [10, '#233439']
-let s:b_yellow  = [11, '#a83c1c']
-let s:b_blue    = [12, '#155455']
-let s:b_magenta = [13, '#2d4662']
-let s:b_cyan    = [14, '#297c7c']
-let s:b_white   = [15, '#798986']
+let s:b_black   = [8, '#234f5c']
+let s:b_red     = [9, '#d65b7f']
+let s:b_green   = [10, '#b5ab95']
+let s:b_yellow  = [11, '#d16545']
+let s:b_blue    = [12, '#428182']
+let s:b_magenta = [13, '#c7c1aa']
+let s:b_cyan    = [14, '#b7c1aa']
+let s:b_white   = [15, '#dad4bd']
+
 
 let none_color   = ['NONE', 'NONE']
 
@@ -70,11 +70,11 @@ endif
 let g:colors_name = 'bluewery-light'
 
 " Basic Settings
-call s:my_hi('Normal'     , '' , s:n_black   , s:b_white)
-call s:my_hi('Comment'    , '' , s:n_blue    , '')
-call s:my_hi('Statement'  , '' , s:b_cyan    , '')
+call s:my_hi('Normal'     , '' , s:b_black   , s:b_white)
+call s:my_hi('Comment'    , '' , s:n_magenta , '')
+call s:my_hi('Statement'  , '' , s:b_blue    , '')
 call s:my_hi('Function'   , '' , s:n_cyan    , '')
-call s:my_hi('Identifier' , '' , s:b_blue    , '')
+call s:my_hi('Identifier' , '' , s:n_blue    , '')
 call s:my_hi('Constant'   , '' , s:n_magenta , '')
 call s:my_hi('Operator'   , '' , s:b_yellow  , '')
 call s:my_hi('PreProc'    , '' , s:n_red     , '')
@@ -90,7 +90,7 @@ call s:my_hi('Visual'     , '' , ''        , s:b_magenta)
 
 call s:my_hi('Folded'     , '' , s:b_yellow        , s:n_blue)
 
-call s:my_hi('StatusLine' , '' , s:b_green   , s:b_cyan)
+call s:my_hi('StatusLine' , '' , s:b_green   , s:b_magenta)
 call s:my_hi('WildMenu'   , '' , s:b_green   , s:n_magenta)
 
 call s:my_hi('Cursor'           , '' , s:b_black   , s:n_black)
@@ -99,7 +99,7 @@ call s:my_hi('CursorColumn'     , '' , ''        , s:n_white)
 
 call s:my_hi('SignColumn'       , '' , ''        , s:n_white)
 
-call s:my_hi('LineNr'           , '' , s:n_blue , s:n_white)
+call s:my_hi('LineNr'           , '' , s:n_magenta , s:n_white)
 call s:my_hi('CursorLineNr'     , '' , s:n_black   , '')
 call s:my_hi('VertSplit'        , '' , s:n_white   , '')
 
@@ -109,7 +109,7 @@ call s:my_hi('Pmenu'            , '' , s:n_black   , s:b_green)
 call s:my_hi('PmenuSel'         , '' , s:b_black   , s:n_blue)
 
 call s:my_hi('Directory'        , '' , s:b_blue    , '')
-call s:my_hi('Type'             , '' , s:b_cyan    , '')
+call s:my_hi('Type'             , '' , s:b_blue    , '')
 call s:my_hi('Include'          , '' , s:n_red     , '')
 
 call s:my_hi('Error'            , '' , s:b_red     , none_color)
@@ -119,8 +119,8 @@ call s:my_hi('WarningMsg'       , '' , s:n_yellow  , none_color)
 call s:my_hi('ExtraWhitespace'  , '' , ''        , s:n_red)
 
 " For 'nathanaelkane/vim-indent-guides'
-call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:n_white)
-call s:my_hi('IndentGuidesEven' , '' , ''        , s:b_green)
+call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:b_magenta)
+call s:my_hi('IndentGuidesEven' , '' , ''        , s:n_white)
 
 
 " For 'SirVer/ultisnips'
@@ -139,7 +139,7 @@ call s:my_hi('ALEError'       , '' , none_color , '')
 call s:my_hi('ALEWarning'     , '' , none_color , '')
 
 " For vim-illuminate
-call s:my_hi('illuminatedWord'     , '' , none_color , s:n_blue)
+call s:my_hi('illuminatedWord'     , '' , none_color , s:n_white)
 
 
 if has('nvim')
