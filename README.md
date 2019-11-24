@@ -2,6 +2,8 @@
 
 :beer: Blue-based vim colorscheme
 
+## bluewery
+
 ![dark_sample](./misc/figures/dark/sample.png)
 
 | Mode    | Status line image                                |
@@ -11,6 +13,8 @@
 | VISUAL  | ![dark_visual](./misc/figures/dark/VISUAL.png)   |
 | REPLACE | ![dark_replace](./misc/figures/dark/REPLACE.png) |
 
+## bluewery-light
+
 ![light_sample](./misc/figures/light/sample.png)
 
 | Mode    | Status line image                                 |
@@ -19,6 +23,27 @@
 | INSERT  | ![dark_insert](./misc/figures/light/INSERT.png)   |
 | VISUAL  | ![dark_visual](./misc/figures/light/VISUAL.png)   |
 | REPLACE | ![dark_replace](./misc/figures/light/REPLACE.png) |
+
+
+## Installation
+
+Using [vim-plug](https://github.com/junegunn/vim-plug),
+
+```vim
+Plug 'relastle/bluewery.vim'
+```
+
+Add following lines into your `.vimrc`.
+
+```vim
+" For dark
+colorscheme bluewery
+let g:lightline = { 'colorscheme': 'bluewery' }
+
+" For light
+colorscheme bluewery-light
+let g:lightline = { 'colorscheme': 'bluewery_light' }
+```
 
 ## Features
 
