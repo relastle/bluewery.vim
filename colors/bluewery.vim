@@ -15,8 +15,6 @@
 "
 
 " Below are visual identity of this color scheme
-"
-
 let s:n_black   = [0, '#07242c']
 let s:n_red     = [1, '#fc6195']
 let s:n_green   = [2, '#5AC6A1']
@@ -35,7 +33,7 @@ let s:b_magenta = [13, '#364f6b']
 let s:b_cyan    = [14, '#94e7e7']
 let s:b_white   = [15, '#dafafc']
 
-let none_color   = ['NONE', 'NONE']
+let s:none_color   = ['NONE', 'NONE']
 
 function! s:my_hi(item, attr, fg_color_name, bg_color_name) abort
   if empty(a:attr) && empty(a:bg_color_name)
@@ -83,7 +81,7 @@ call s:my_hi('Delimiter',        '', s:n_magenta, '')
 call s:my_hi('Title',            '', s:n_cyan,    '')
 call s:my_hi('Underlined',       '', s:b_red,     '')
 call s:my_hi('NonText',          '', s:n_magenta, '')
-call s:my_hi('Todo',             '', s:b_yellow,  none_color)
+call s:my_hi('Todo',             '', s:b_yellow,  s:none_color)
 call s:my_hi('Search',           '', '',          s:n_yellow)
 call s:my_hi('Special',          '', s:b_yellow,  '')
 call s:my_hi('Visual',           '', '',          s:b_magenta)
@@ -94,7 +92,7 @@ call s:my_hi('StatusLine',       '', s:b_green,   s:b_cyan)
 call s:my_hi('WildMenu',         '', s:b_green,   s:n_magenta)
 call s:my_hi('ModeMsg',          '', s:n_yellow,  '')
 
-call s:my_hi('Cursor',           '', s:b_white,   s:n_black)
+call s:my_hi('Cursor',           'reverse', s:b_white,   s:n_black)
 call s:my_hi('CursorLine',       '', '',          s:n_black)
 call s:my_hi('CursorColumn',     '', '',          s:n_black)
 
@@ -113,10 +111,10 @@ call s:my_hi('Directory',        '', s:b_blue,    '')
 call s:my_hi('Type',             '', s:b_cyan,    '')
 call s:my_hi('Include',          '', s:n_red,     '')
 
-call s:my_hi('Error',            '', s:b_red,     none_color)
-call s:my_hi('ErrorMsg',         '', s:b_red,     none_color)
-call s:my_hi('WarningMsg',       '', s:n_yellow,  none_color)
-call s:my_hi('WarningMsg',       '', s:n_yellow,  none_color)
+call s:my_hi('Error',            '', s:b_red,     s:none_color)
+call s:my_hi('ErrorMsg',         '', s:b_red,     s:none_color)
+call s:my_hi('WarningMsg',       '', s:n_yellow,  s:none_color)
+call s:my_hi('WarningMsg',       '', s:n_yellow,  s:none_color)
 call s:my_hi('ExtraWhitespace',  '', '',          s:n_red)
 
 " For 'nathanaelkane/vim-indent-guides'
@@ -136,11 +134,11 @@ call s:my_hi('vimIsCommand',     '', s:n_cyan,    '')
 " For ALE
 call s:my_hi('ALEWarningSign',   '', s:n_yellow,  '')
 call s:my_hi('ALEErrorSign',     '', s:n_red,     '')
-call s:my_hi('ALEError',         '', none_color,  '')
-call s:my_hi('ALEWarning',       '', none_color,  '')
+call s:my_hi('ALEError',         '', s:none_color,  '')
+call s:my_hi('ALEWarning',       '', s:none_color,  '')
 
 " For vim-illuminate
-call s:my_hi('illuminatedWord',  '', none_color,  s:n_blue)
+call s:my_hi('illuminatedWord',  '', s:none_color,  s:n_blue)
 
 
 if has('nvim')
