@@ -44,18 +44,18 @@ function! s:build_palette() abort
         \ 'visual':   {},
         \ 'tabline':  {}}
 
-  let col_base     = [s:b_white[1]   , s:b_green[1]   , s:b_white[0]    , s:b_green[0]]
-  let col_edge     = [s:b_white[1]   , s:b_yellow[1]  , s:b_white[0]   , s:b_yellow[0]]
-  let col_gradient = [s:b_white[1]   , s:n_blue[1]   , s:b_white[0]   , s:n_blue[0]]
-  let col_nc       = [s:b_white[1]   , s:b_black[1]   , s:b_white[0]   , s:b_black[0]]
-  let col_tabfill  = [s:n_magenta[1] , s:n_blue[1]    , s:n_magenta[0] , s:n_blue[0]]
-  let col_tabsel   = [s:b_white[1]   , s:n_black[1]   , s:b_white[0]   , s:n_black[0]]
-  let col_normal   = [s:n_black[1]   , s:b_blue[1]    , s:n_black[0]   , s:b_blue[0]]
-  let col_insert   = [s:n_black[1]   , s:b_red[1]     , s:n_black[0]   , s:b_red[0]]
-  let col_replace  = [s:n_black[1]   , s:n_yellow[1]  , s:n_black[0]   , s:n_yellow[0]]
-  let col_visual   = [s:n_black[1]   , s:n_green[1]   , s:n_black[0]   , s:n_green[0]]
-  let col_error    = [s:n_white[1]   , s:n_red[1]     , s:n_white[0]   , s:n_red[0]]
-  let col_warning  = [s:n_white[1]   , s:n_yellow[1]  , s:n_white[0]   , s:n_yellow[0]]
+  let col_base     = [s:b_white[1],   s:b_green[1],  s:b_white[0],   s:b_green[0]]
+  let col_edge     = [s:b_white[1],   s:b_yellow[1], s:b_white[0],   s:b_yellow[0]]
+  let col_gradient = [s:b_white[1],   s:n_blue[1],   s:b_white[0],   s:n_blue[0]]
+  let col_nc       = [s:b_white[1],   s:b_black[1],  s:b_white[0],   s:b_black[0]]
+  let col_tabfill  = [s:n_magenta[1], s:b_green[1],  s:n_magenta[0], s:b_green[0]]
+  let col_tabsel   = [s:b_white[1],   s:n_blue[1],   s:b_white[0],   s:n_blue[0]]
+  let col_normal   = [s:n_black[1],   s:b_blue[1],   s:n_black[0],   s:b_blue[0]]
+  let col_insert   = [s:n_black[1],   s:b_red[1],    s:n_black[0],   s:b_red[0]]
+  let col_replace  = [s:n_black[1],   s:n_yellow[1], s:n_black[0],   s:n_yellow[0]]
+  let col_visual   = [s:n_black[1],   s:n_green[1],  s:n_black[0],   s:n_green[0]]
+  let col_error    = [s:n_white[1],   s:n_red[1],    s:n_white[0],   s:n_red[0]]
+  let col_warning  = [s:n_white[1],   s:n_yellow[1], s:n_white[0],   s:n_yellow[0]]
 
   let p.normal.middle = [
         \ col_base]
