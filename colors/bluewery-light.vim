@@ -137,6 +137,10 @@ call s:my_hi('ALEErrorSign'   , '' , s:n_red      , '')
 call s:my_hi('ALEError'       , '' , s:none_color , '')
 call s:my_hi('ALEWarning'     , '' , s:none_color , '')
 
+" For sneak.vim
+call s:my_hi('Sneak',      '', '', s:n_red)
+call s:my_hi('SneakScope', '', '', s:n_red)
+
 " For vim-illuminate
 call s:my_hi('illuminatedWord'     , '' , s:none_color , s:n_white)
 
