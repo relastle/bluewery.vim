@@ -1,6 +1,6 @@
 # bluewery.vim
 
-:beer: Blue-based vim colorscheme
+:large_blue_diamond: Blue-based vim colorscheme :beer:
 
 ## bluewery
 
