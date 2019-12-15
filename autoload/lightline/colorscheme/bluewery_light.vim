@@ -35,71 +35,74 @@ let s:b_magenta = [13, '#c7c1aa']
 let s:b_cyan    = [14, '#b7c1aa']
 let s:b_white   = [15, '#dad4bd']
 
+" The source codes below is highly inspired by
+" https://github.com/cocopon/iceberg.vim/blob/master/autoload/lightline/colorscheme/iceberg.vim
 
 function! s:build_palette() abort
-  let p = {
+  let l:p = {
         \ 'normal':   {},
         \ 'inactive': {},
         \ 'insert':   {},
         \ 'replace':  {},
         \ 'visual':   {},
-        \ 'tabline':  {}}
+        \ 'tabline':  {},
+        \ }
 
-  let col_base     = [s:b_black[1]   , s:b_magenta[1] , s:b_black[0]   , s:b_magenta[0]]
-  let col_edge     = [s:b_white[1]   , s:b_yellow[1]  , s:b_white[0]   , s:b_yellow[0]]
-  let col_gradient = [s:b_black[1]   , s:b_cyan[1]    , s:b_black[0]   , s:b_cyan[0]]
-  let col_nc       = [s:b_white[1]   , s:n_yellow[1]  , s:b_white[0]   , s:n_yellow[0]]
-  let col_tabfill  = [s:n_magenta[1] , s:b_green[1]   , s:n_magenta[0] , s:b_green[0]]
-  let col_tabsel   = [s:b_white[1]   , s:n_blue[1]    , s:b_white[0]   , s:n_blue[0]]
-  let col_normal   = [s:n_white[1]   , s:b_blue[1]    , s:n_white[0]   , s:b_blue[0]]
-  let col_insert   = [s:b_black[1]   , s:b_red[1]     , s:b_black[0]   , s:b_red[0]]
-  let col_replace  = [s:b_black[1]   , s:n_yellow[1]  , s:b_black[0]   , s:n_yellow[0]]
-  let col_visual   = [s:b_black[1]   , s:n_green[1]   , s:b_black[0]   , s:n_green[0]]
-  let col_error    = [s:n_white[1]   , s:n_red[1]     , s:n_white[0]   , s:n_red[0]]
-  let col_warning  = [s:n_white[1]   , s:n_yellow[1]  , s:n_white[0]   , s:n_yellow[0]]
+  let l:col_base     = bluewery#make_gui_term_pair_colors(s:b_black,   s:b_magenta)
+  let l:col_edge     = bluewery#make_gui_term_pair_colors(s:b_white,   s:b_yellow)
+  let l:col_gradient = bluewery#make_gui_term_pair_colors(s:b_black,   s:b_cyan)
+  let l:col_nc       = bluewery#make_gui_term_pair_colors(s:b_white,   s:n_yellow)
+  let l:col_tabfill  = bluewery#make_gui_term_pair_colors(s:n_magenta, s:b_green)
+  let l:col_tabsel   = bluewery#make_gui_term_pair_colors(s:b_white,   s:n_blue)
+  let l:col_normal   = bluewery#make_gui_term_pair_colors(s:n_white,   s:b_blue)
+  let l:col_insert   = bluewery#make_gui_term_pair_colors(s:b_black,   s:b_red)
+  let l:col_replace  = bluewery#make_gui_term_pair_colors(s:b_black,   s:n_yellow)
+  let l:col_visual   = bluewery#make_gui_term_pair_colors(s:b_black,   s:n_green)
+  let l:col_error    = bluewery#make_gui_term_pair_colors(s:n_white,   s:n_red)
+  let l:col_warning  = bluewery#make_gui_term_pair_colors(s:n_white,   s:n_yellow)
 
-  let p.normal.middle = [
-        \ col_base]
-  let p.normal.left = [
-        \ col_normal,
-        \ col_gradient]
-  let p.normal.right = [
-        \ col_edge,
-        \ col_gradient]
-  let p.normal.error = [
-        \ col_error]
-  let p.normal.warning = [
-        \ col_warning]
+  let l:p.normal.middle = [
+        \ l:col_base]
+  let l:p.normal.left = [
+        \ l:col_normal,
+        \ l:col_gradient]
+  let l:p.normal.right = [
+        \ l:col_edge,
+        \ l:col_gradient]
+  let l:p.normal.error = [
+        \ l:col_error]
+  let l:p.normal.warning = [
+        \ l:col_warning]
 
-  let p.insert.left = [
-        \ col_insert,
-        \ col_gradient]
-  let p.replace.left = [
-        \ col_replace,
-        \ col_gradient]
-  let p.visual.left = [
-        \ col_visual,
-        \ col_gradient]
+  let l:p.insert.left = [
+        \ l:col_insert,
+        \ l:col_gradient]
+  let l:p.replace.left = [
+        \ l:col_replace,
+        \ l:col_gradient]
+  let l:p.visual.left = [
+        \ l:col_visual,
+        \ l:col_gradient]
 
-  let p.inactive.middle = [
-        \ col_nc]
-  let p.inactive.left = [
-        \ col_nc,
-        \ col_nc]
-  let p.inactive.right = [
-        \ col_nc,
-        \ col_nc]
+  let l:p.inactive.middle = [
+        \ l:col_nc]
+  let l:p.inactive.left = [
+        \ l:col_nc,
+        \ l:col_nc]
+  let l:p.inactive.right = [
+        \ l:col_nc,
+        \ l:col_nc]
 
-  let p.tabline.middle = [
-        \ col_tabfill]
-  let p.tabline.left = [
-        \ col_tabfill]
-  let p.tabline.tabsel = [
-        \ col_tabsel]
+  let l:p.tabline.middle = [
+        \ l:col_tabfill]
+  let l:p.tabline.left = [
+        \ l:col_tabfill]
+  let l:p.tabline.tabsel = [
+        \ l:col_tabsel]
 
-  let p.tabline.right = copy(p.normal.right)
+  let l:p.tabline.right = copy(l:p.normal.right)
 
-  return p
+  return l:p
 endfunction
 
 
