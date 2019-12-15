@@ -96,6 +96,10 @@ This colorscheme is inspired by
 - [gotham](https://github.com/whatyouhide/vim-gotham)
 - [solarized](https://github.com/altercation/vim-colors-solarized)
 
+## NOTE
+
+:warning: please note that some destructive changes would be done without any confirmation.
+
 ## [License](LICENSE)
 
 The MIT License (MIT)
