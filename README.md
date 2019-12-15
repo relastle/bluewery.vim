@@ -50,7 +50,7 @@ let g:lightline = { 'colorscheme': 'bluewery_light' }
 - [x] True-color based color scheme.
 - [x] Supporting lightline colorscheme.
 - [x] `Dark` and `Light` version schemes.
-- [ ] Supporting airline colorscheme.
+- [x] Supporting airline colorscheme.
 
 ## pallete
 
