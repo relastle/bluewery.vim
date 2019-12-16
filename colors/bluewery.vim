@@ -112,6 +112,10 @@ call s:my_hi('Directory',        '', s:b_blue,    '')
 call s:my_hi('Type',             '', s:b_cyan,    '')
 call s:my_hi('Include',          '', s:n_red,     '')
 
+call s:my_hi("TabLineFill", '', s:n_black, '')
+call s:my_hi("TabLine",     '', s:n_white, s:b_green)
+call s:my_hi("TabLineSel",  '', s:n_white, s:n_blue)
+
 call s:my_hi('Error',            '', s:b_red,     s:none_color)
 call s:my_hi('ErrorMsg',         '', s:b_red,     s:none_color)
 call s:my_hi('WarningMsg',       '', s:n_yellow,  s:none_color)
