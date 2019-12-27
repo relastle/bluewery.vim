@@ -122,6 +122,11 @@ call s:my_hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
 call s:my_hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
 call s:my_hi('ExtraWhitespace'  , '' , ''        , s:n_red)
 
+call s:my_hi("DiffAdd",    '', '',          s:b_green)
+call s:my_hi("DiffChange", '', '',          s:b_magenta)
+call s:my_hi("DiffDelete", '', s:b_magenta, s:n_red)
+call s:my_hi("DiffText",   '', s:n_blue,    s:none_color)
+
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:b_magenta)
 call s:my_hi('IndentGuidesEven' , '' , ''        , s:n_white)
