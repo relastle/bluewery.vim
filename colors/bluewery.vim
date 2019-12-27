@@ -68,24 +68,25 @@ endif
 let g:colors_name = 'bluewery'
 
 " Basic Settings
-call s:my_hi('Normal',           '', s:n_white,   s:b_black)
-call s:my_hi('Comment',          '', s:n_blue,    '')
-call s:my_hi('Statement',        '', s:b_cyan,    '')
-call s:my_hi('Function',         '', s:n_cyan,    '')
-call s:my_hi('Identifier',       '', s:b_blue,    '')
-call s:my_hi('Constant',         '', s:n_magenta, '')
-call s:my_hi('Operator',         '', s:b_yellow,  '')
-call s:my_hi('PreProc',          '', s:n_red,     '')
-call s:my_hi('String',           '', s:n_green,   '')
-call s:my_hi('Delimiter',        '', s:n_magenta, '')
-call s:my_hi('Title',            '', s:n_cyan,    '')
-call s:my_hi('Underlined',       '', s:b_red,     '')
-call s:my_hi('NonText',          '', s:n_magenta, '')
-call s:my_hi('Ignore',           '', s:n_magenta, '')
-call s:my_hi('Todo',             '', s:b_yellow,  s:none_color)
-call s:my_hi('Search',           '', '',          s:n_yellow)
-call s:my_hi('Special',          '', s:b_yellow,  '')
-call s:my_hi('Visual',           '', '',          s:b_magenta)
+call s:my_hi('Normal',     '', s:n_white,   s:b_black)
+call s:my_hi('Comment',    '', s:n_blue,    '')
+call s:my_hi('Statement',  '', s:b_cyan,    '')
+call s:my_hi('Function',   '', s:n_cyan,    '')
+call s:my_hi('Identifier', '', s:b_blue,    '')
+call s:my_hi('Constant',   '', s:n_magenta, '')
+call s:my_hi('Operator',   '', s:b_yellow,  '')
+call s:my_hi('PreProc',    '', s:n_red,     '')
+call s:my_hi('String',     '', s:n_green,   '')
+call s:my_hi('Delimiter',  '', s:n_magenta, '')
+call s:my_hi('Title',      '', s:n_cyan,    '')
+call s:my_hi('Underlined', '', s:b_red,     '')
+call s:my_hi('NonText',    '', s:n_magenta, '')
+call s:my_hi('Ignore',     '', s:n_magenta, '')
+call s:my_hi('Todo',       '', s:b_yellow,  s:none_color)
+call s:my_hi('Search',     '', '',          s:n_yellow)
+call s:my_hi('Special',    '', s:b_yellow,  '')
+call s:my_hi('Visual',     '', '',          s:b_magenta)
+call s:my_hi('MatchParen', '', s:b_green,   s:n_magenta)
 
 call s:my_hi('Folded',           '', s:b_yellow,  s:n_blue)
 
@@ -130,7 +131,6 @@ call s:my_hi("DiffText",   '', s:n_blue,    s:none_color)
 " For 'nathanaelkane/vim-indent-guides'
 call s:my_hi('IndentGuidesOdd',  '', '',          s:n_black)
 call s:my_hi('IndentGuidesEven', '', '',          s:b_green)
-
 
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
