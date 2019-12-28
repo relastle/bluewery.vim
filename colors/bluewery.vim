@@ -138,6 +138,10 @@ hi! link snipLeadingSpaces Normal
 " For Golang
 call s:my_hi('goImport',         '', s:n_red,     '')
 
+" For Rust
+call s:my_hi('rustCommentLineDoc', '', s:n_magenta, '')
+call s:my_hi('rustMacro',          '', s:n_cyan,    '')
+
 " For Vimscript
 call s:my_hi('vimIsCommand',     '', s:n_cyan,    '')
 
