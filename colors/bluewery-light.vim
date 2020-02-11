@@ -142,6 +142,12 @@ call s:my_hi('goImport'   , ''     , s:n_red  , '')
 call s:my_hi('rustCommentLineDoc', '', s:n_magenta, '')
 call s:my_hi('rustMacro',          '', s:n_cyan,    '')
 
+" For shell script
+call s:my_hi('zshDeref', '', s:n_cyan, '')
+call s:my_hi('zshDerefDelim', '', s:n_magenta, '')
+call s:my_hi('zshSubst', '', s:n_cyan, '')
+call s:my_hi('zshSubstDelim', '', s:n_magenta, '')
+
 " For Vimscript
 call s:my_hi('vimIsCommand'   , ''     , s:n_cyan , '')
 
