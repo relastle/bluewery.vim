@@ -147,6 +147,7 @@ call s:my_hi('zshDeref', '', s:n_cyan, '')
 call s:my_hi('zshDerefDelim', '', s:n_magenta, '')
 call s:my_hi('zshSubst', '', s:n_cyan, '')
 call s:my_hi('zshSubstDelim', '', s:n_magenta, '')
+call s:my_hi('zshVariableDef', '', s:n_cyan, '')
 
 " For Vimscript
 call s:my_hi('vimIsCommand',     '', s:n_cyan,    '')
