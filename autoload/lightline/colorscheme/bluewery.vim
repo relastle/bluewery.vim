@@ -51,7 +51,7 @@ function! s:build_palette() abort
   let l:col_base     = bluewery#make_gui_term_pair_colors(s:b_white,   s:b_green)
   let l:col_edge     = bluewery#make_gui_term_pair_colors(s:b_white,   s:b_yellow)
   let l:col_gradient = bluewery#make_gui_term_pair_colors(s:b_white,   s:n_blue)
-  let l:col_nc       = bluewery#make_gui_term_pair_colors(s:b_white,   s:b_black)
+  let l:col_nc       = bluewery#make_gui_term_pair_colors(s:b_white,   s:b_green)
   let l:col_tabfill  = bluewery#make_gui_term_pair_colors(s:n_magenta, s:b_green)
   let l:col_tabsel   = bluewery#make_gui_term_pair_colors(s:b_white,   s:n_blue)
   let l:col_normal   = bluewery#make_gui_term_pair_colors(s:n_black,   s:b_blue)
