@@ -152,6 +152,10 @@ call s:my_hi('zshVariableDef', '', s:n_cyan, '')
 " For Vimscript
 call s:my_hi('vimIsCommand'   , ''     , s:n_cyan , '')
 
+" For Vim help
+call s:my_hi('helpHyperTextEntry', '', s:n_red,     '')
+call s:my_hi('helpSectionDelim',   '', s:n_magenta, '')
+
 " For ALE
 call s:my_hi('ALEWarningSign' , '' , s:n_yellow   , '')
 call s:my_hi('ALEErrorSign'   , '' , s:n_red      , '')
