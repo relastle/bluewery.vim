@@ -35,7 +35,7 @@ let s:b_white   = [15, '#dad4bd']
 
 let s:none_color   = ['NONE', 'NONE']
 
-function! s:my_hi(item, attr, fg_color_name, bg_color_name) abort
+function! bluewery#hi(item, attr, fg_color_name, bg_color_name) abort
   if empty(a:attr) && empty(a:bg_color_name)
     execute printf('hi! %s ctermfg=%d guifg=%s', a:item, a:fg_color_name[0], a:fg_color_name[1])
     return
@@ -68,106 +68,106 @@ endif
 let g:colors_name = 'bluewery-light'
 
 " Basic Settings
-call s:my_hi('Normal',     '', s:b_black,   s:b_white)
-call s:my_hi('Comment',    '', s:n_magenta, '')
-call s:my_hi('Statement',  '', s:b_blue,    '')
-call s:my_hi('Function',   '', s:n_cyan,    '')
-call s:my_hi('Identifier', '', s:n_blue,    '')
-call s:my_hi('Constant',   '', s:n_magenta, '')
-call s:my_hi('Operator',   '', s:b_yellow,  '')
-call s:my_hi('PreProc',    '', s:n_red,     '')
-call s:my_hi('String',     '', s:n_green,   '')
-call s:my_hi('Delimiter',  '', s:n_magenta, '')
-call s:my_hi('Title',      '', s:n_cyan,    '')
-call s:my_hi('Underlined', '', s:b_red,     '')
-call s:my_hi('NonText',    '', s:n_magenta, '')
-call s:my_hi('Ignore',     '', s:n_magenta, '')
-call s:my_hi('Todo',       '', s:b_yellow,  s:none_color)
-call s:my_hi('Search',     '', '',          s:n_yellow)
-call s:my_hi('Special',    '', s:b_yellow,  '')
-call s:my_hi('Visual',     '', '',          s:b_magenta)
-call s:my_hi('MatchParen', '', s:b_black,   s:b_green)
+call bluewery#hi('Normal',     '', s:b_black,   s:b_white)
+call bluewery#hi('Comment',    '', s:n_magenta, '')
+call bluewery#hi('Statement',  '', s:b_blue,    '')
+call bluewery#hi('Function',   '', s:n_cyan,    '')
+call bluewery#hi('Identifier', '', s:n_blue,    '')
+call bluewery#hi('Constant',   '', s:n_magenta, '')
+call bluewery#hi('Operator',   '', s:b_yellow,  '')
+call bluewery#hi('PreProc',    '', s:n_red,     '')
+call bluewery#hi('String',     '', s:n_green,   '')
+call bluewery#hi('Delimiter',  '', s:n_magenta, '')
+call bluewery#hi('Title',      '', s:n_cyan,    '')
+call bluewery#hi('Underlined', '', s:b_red,     '')
+call bluewery#hi('NonText',    '', s:n_magenta, '')
+call bluewery#hi('Ignore',     '', s:n_magenta, '')
+call bluewery#hi('Todo',       '', s:b_yellow,  s:none_color)
+call bluewery#hi('Search',     '', '',          s:n_yellow)
+call bluewery#hi('Special',    '', s:b_yellow,  '')
+call bluewery#hi('Visual',     '', '',          s:b_magenta)
+call bluewery#hi('MatchParen', '', s:b_black,   s:b_green)
 
-call s:my_hi('Folded'     , '' , s:b_yellow        , s:n_blue)
+call bluewery#hi('Folded'     , '' , s:b_yellow        , s:n_blue)
 
-call s:my_hi('StatusLine' , '' , s:b_green   , s:b_magenta)
-call s:my_hi('WildMenu'   , '' , s:b_green   , s:n_magenta)
-call s:my_hi('ModeMsg',          '', s:n_yellow,  '')
+call bluewery#hi('StatusLine' , '' , s:b_green   , s:b_magenta)
+call bluewery#hi('WildMenu'   , '' , s:b_green   , s:n_magenta)
+call bluewery#hi('ModeMsg',          '', s:n_yellow,  '')
 
-call s:my_hi('Cursor'           , 'reverse' , s:b_black   , s:n_black)
-call s:my_hi('CursorLine'       , '' , ''        , s:n_white)
-call s:my_hi('CursorColumn'     , '' , ''        , s:n_white)
+call bluewery#hi('Cursor'           , 'reverse' , s:b_black   , s:n_black)
+call bluewery#hi('CursorLine'       , '' , ''        , s:n_white)
+call bluewery#hi('CursorColumn'     , '' , ''        , s:n_white)
 
-call s:my_hi('SignColumn'       , '' , ''        , s:n_white)
+call bluewery#hi('SignColumn'       , '' , ''        , s:n_white)
 
-call s:my_hi('LineNr'           , '' , s:n_magenta , s:n_white)
-call s:my_hi('CursorLineNr'     , '' , s:n_black   , '')
-call s:my_hi('VertSplit'        , '' , s:n_white   , '')
+call bluewery#hi('LineNr'           , '' , s:n_magenta , s:n_white)
+call bluewery#hi('CursorLineNr'     , '' , s:n_black   , '')
+call bluewery#hi('VertSplit'        , '' , s:n_white   , '')
 
-call s:my_hi('PmenuSbar'        , '' , ''        , s:n_cyan)
-call s:my_hi('PmenuThumb'       , '' , ''        , s:n_white)
-call s:my_hi('Pmenu'            , '' , s:n_black   , s:b_green)
-call s:my_hi('PmenuSel'         , '' , s:b_black   , s:n_blue)
+call bluewery#hi('PmenuSbar'        , '' , ''        , s:n_cyan)
+call bluewery#hi('PmenuThumb'       , '' , ''        , s:n_white)
+call bluewery#hi('Pmenu'            , '' , s:n_black   , s:b_green)
+call bluewery#hi('PmenuSel'         , '' , s:b_black   , s:n_blue)
 
-call s:my_hi('Directory'        , '' , s:b_blue    , '')
-call s:my_hi('Type'             , '' , s:b_blue    , '')
-call s:my_hi('Include'          , '' , s:n_red     , '')
+call bluewery#hi('Directory'        , '' , s:b_blue    , '')
+call bluewery#hi('Type'             , '' , s:b_blue    , '')
+call bluewery#hi('Include'          , '' , s:n_red     , '')
 
-call s:my_hi("TabLineFill", '', s:n_black, '')
-call s:my_hi("TabLine",     '', s:n_white, s:b_green)
-call s:my_hi("TabLineSel",  '', s:n_white, s:n_blue)
+call bluewery#hi("TabLineFill", '', s:n_black, '')
+call bluewery#hi("TabLine",     '', s:n_white, s:b_green)
+call bluewery#hi("TabLineSel",  '', s:n_white, s:n_blue)
 
-call s:my_hi('Error'            , '' , s:b_red     , s:none_color)
-call s:my_hi('ErrorMsg'         , '' , s:b_red     , s:none_color)
-call s:my_hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
-call s:my_hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
-call s:my_hi('ExtraWhitespace'  , '' , ''        , s:n_red)
+call bluewery#hi('Error'            , '' , s:b_red     , s:none_color)
+call bluewery#hi('ErrorMsg'         , '' , s:b_red     , s:none_color)
+call bluewery#hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
+call bluewery#hi('WarningMsg'       , '' , s:n_yellow  , s:none_color)
+call bluewery#hi('ExtraWhitespace'  , '' , ''        , s:n_red)
 
-call s:my_hi("DiffAdd",    '', '',          s:b_green)
-call s:my_hi("DiffChange", '', '',          s:b_magenta)
-call s:my_hi("DiffDelete", '', s:b_magenta, s:n_red)
-call s:my_hi("DiffText",   '', s:n_blue,    s:none_color)
+call bluewery#hi("DiffAdd",    '', '',          s:b_green)
+call bluewery#hi("DiffChange", '', '',          s:b_magenta)
+call bluewery#hi("DiffDelete", '', s:b_magenta, s:n_red)
+call bluewery#hi("DiffText",   '', s:n_blue,    s:none_color)
 
 " For 'nathanaelkane/vim-indent-guides'
-call s:my_hi('IndentGuidesOdd'  , '' , ''        , s:b_magenta)
-call s:my_hi('IndentGuidesEven' , '' , ''        , s:n_white)
+call bluewery#hi('IndentGuidesOdd'  , '' , ''        , s:b_magenta)
+call bluewery#hi('IndentGuidesEven' , '' , ''        , s:n_white)
 
 " For 'SirVer/ultisnips'
 hi! link snipLeadingSpaces Normal
 
 " For Golang
-call s:my_hi('goImport'   , ''     , s:n_red  , '')
+call bluewery#hi('goImport'   , ''     , s:n_red  , '')
 
 " For Rust
-call s:my_hi('rustCommentLineDoc', '', s:n_magenta, '')
-call s:my_hi('rustMacro',          '', s:n_cyan,    '')
+call bluewery#hi('rustCommentLineDoc', '', s:n_magenta, '')
+call bluewery#hi('rustMacro',          '', s:n_cyan,    '')
 
 " For shell script
-call s:my_hi('zshDeref', '', s:n_cyan, '')
-call s:my_hi('zshDerefDelim', '', s:n_magenta, '')
-call s:my_hi('zshSubst', '', s:n_cyan, '')
-call s:my_hi('zshSubstDelim', '', s:n_magenta, '')
-call s:my_hi('zshVariableDef', '', s:n_cyan, '')
+call bluewery#hi('zshDeref', '', s:n_cyan, '')
+call bluewery#hi('zshDerefDelim', '', s:n_magenta, '')
+call bluewery#hi('zshSubst', '', s:n_cyan, '')
+call bluewery#hi('zshSubstDelim', '', s:n_magenta, '')
+call bluewery#hi('zshVariableDef', '', s:n_cyan, '')
 
 " For Vimscript
-call s:my_hi('vimIsCommand'   , ''     , s:n_cyan , '')
+call bluewery#hi('vimIsCommand'   , ''     , s:n_cyan , '')
 
 " For Vim help
-call s:my_hi('helpHyperTextEntry', '', s:n_red,     '')
-call s:my_hi('helpSectionDelim',   '', s:n_magenta, '')
+call bluewery#hi('helpHyperTextEntry', '', s:n_red,     '')
+call bluewery#hi('helpSectionDelim',   '', s:n_magenta, '')
 
 " For ALE
-call s:my_hi('ALEWarningSign' , '' , s:n_yellow   , '')
-call s:my_hi('ALEErrorSign'   , '' , s:n_red      , '')
-call s:my_hi('ALEError'       , '' , s:none_color , '')
-call s:my_hi('ALEWarning'     , '' , s:none_color , '')
+call bluewery#hi('ALEWarningSign' , '' , s:n_yellow   , '')
+call bluewery#hi('ALEErrorSign'   , '' , s:n_red      , '')
+call bluewery#hi('ALEError'       , '' , s:none_color , '')
+call bluewery#hi('ALEWarning'     , '' , s:none_color , '')
 
 " For sneak.vim
-call s:my_hi('Sneak',      '', '', s:n_red)
-call s:my_hi('SneakScope', '', '', s:n_red)
+call bluewery#hi('Sneak',      '', '', s:n_red)
+call bluewery#hi('SneakScope', '', '', s:n_red)
 
 " For vim-illuminate
-call s:my_hi('illuminatedWord'     , '' , s:none_color , s:b_magenta)
+call bluewery#hi('illuminatedWord'     , '' , s:none_color , s:b_magenta)
 
 
 if has('nvim')
