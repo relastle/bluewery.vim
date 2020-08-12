@@ -36,7 +36,7 @@ let s:b_white   = [15, '#dafafc']
 let s:none_color   = ['NONE', 'NONE']
 
 " Custom color
-let s:search_color = [3, '#633a59']
+let s:search_color = [3, '#714867']
 
 if !has('gui_running') && &t_Co < 256
   finish
