@@ -35,6 +35,9 @@ let s:b_white   = [15, '#dafafc']
 
 let s:none_color   = ['NONE', 'NONE']
 
+" Custom color
+let s:search_color = [3, '#633a59']
+
 if !has('gui_running') && &t_Co < 256
   finish
 endif
@@ -49,25 +52,25 @@ endif
 let g:colors_name = 'bluewery'
 
 " Basic Settings
-call bluewery#hi('Normal',     '', s:n_white,   s:b_black)
-call bluewery#hi('Comment',    '', s:n_blue,    '')
-call bluewery#hi('Statement',  '', s:b_cyan,    '')
-call bluewery#hi('Function',   '', s:n_cyan,    '')
-call bluewery#hi('Identifier', '', s:b_blue,    '')
-call bluewery#hi('Constant',   '', s:n_magenta, '')
-call bluewery#hi('Operator',   '', s:b_yellow,  '')
-call bluewery#hi('PreProc',    '', s:n_red,     '')
-call bluewery#hi('String',     '', s:n_green,   '')
-call bluewery#hi('Delimiter',  '', s:n_magenta, '')
-call bluewery#hi('Title',      '', s:n_cyan,    '')
-call bluewery#hi('Underlined', '', s:b_red,     '')
-call bluewery#hi('NonText',    '', s:n_magenta, '')
-call bluewery#hi('Ignore',     '', s:n_magenta, '')
-call bluewery#hi('Todo',       '', s:b_yellow,  s:none_color)
-call bluewery#hi('Search',     '', '',          s:n_yellow)
-call bluewery#hi('Special',    '', s:b_yellow,  '')
-call bluewery#hi('Visual',     '', '',          s:b_magenta)
-call bluewery#hi('MatchParen', '', s:b_green,   s:n_magenta)
+call bluewery#hi('Normal',     '', s:n_white,    s:b_black)
+call bluewery#hi('Comment',    '', s:n_blue,     '')
+call bluewery#hi('Statement',  '', s:b_cyan,     '')
+call bluewery#hi('Function',   '', s:n_cyan,     '')
+call bluewery#hi('Identifier', '', s:b_blue,     '')
+call bluewery#hi('Constant',   '', s:n_magenta,  '')
+call bluewery#hi('Operator',   '', s:b_yellow,   '')
+call bluewery#hi('PreProc',    '', s:n_red,      '')
+call bluewery#hi('String',     '', s:n_green,    '')
+call bluewery#hi('Delimiter',  '', s:n_magenta,  '')
+call bluewery#hi('Title',      '', s:n_cyan,     '')
+call bluewery#hi('Underlined', '', s:b_red,      '')
+call bluewery#hi('NonText',    '', s:n_magenta,  '')
+call bluewery#hi('Ignore',     '', s:n_magenta,  '')
+call bluewery#hi('Todo',       '', s:b_yellow,   s:none_color)
+call bluewery#hi('Search',     '', s:none_color, s:search_color)
+call bluewery#hi('Special',    '', s:b_yellow,   '')
+call bluewery#hi('Visual',     '', '',           s:b_magenta)
+call bluewery#hi('MatchParen', '', s:b_green,    s:n_magenta)
 
 call bluewery#hi('Folded',           '', s:b_yellow,  s:n_blue)
 
@@ -144,8 +147,8 @@ call bluewery#hi('ALEError',         '', s:none_color,  '')
 call bluewery#hi('ALEWarning',       '', s:none_color,  '')
 
 " For sneak.vim
-call bluewery#hi('Sneak',      '', '', s:n_red)
-call bluewery#hi('SneakScope', '', '', s:n_red)
+call bluewery#hi('Sneak',      '', s:none_color, s:search_color)
+call bluewery#hi('SneakScope', '', s:none_color, s:search_color)
 
 " For vim-illuminate
 call bluewery#hi('illuminatedWord',  '', s:none_color,  s:b_magenta)
