@@ -125,6 +125,7 @@ call bluewery#hi('goImport',         '', s:n_red,     '')
 " For Rust
 call bluewery#hi('rustCommentLineDoc', '', s:n_magenta, '')
 call bluewery#hi('rustMacro',          '', s:n_cyan,    '')
+call bluewery#hi('rustModPath',        '', s:b_blue,    '')
 
 " For shell script
 call bluewery#hi('zshDeref', '', s:n_cyan, '')
