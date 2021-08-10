@@ -135,6 +135,9 @@ call bluewery#hi('zshSubst', '', s:n_cyan, '')
 call bluewery#hi('zshSubstDelim', '', s:n_magenta, '')
 call bluewery#hi('zshVariableDef', '', s:n_cyan, '')
 
+" For Python
+hi! link pythonRun Comment
+
 " For Vimscript
 call bluewery#hi('vimIsCommand',     '', s:n_cyan,    '')
 
