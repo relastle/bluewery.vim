@@ -147,6 +147,12 @@ call bluewery#hi('ALEErrorSign'   , '' , s:n_red      , '')
 call bluewery#hi('ALEError'       , '' , s:none_color , '')
 call bluewery#hi('ALEWarning'     , '' , s:none_color , '')
 
+" For Nvim diagnostic
+call bluewery#hi('DiagnosticError', '', s:n_red,     '')
+call bluewery#hi('DiagnosticWarn',  '', s:n_yellow,  '')
+call bluewery#hi('DiagnosticInfo',  '', s:n_cyan,    '')
+call bluewery#hi('DiagnosticHint',  '', s:n_magenta, '')
+
 " For sneak.vim
 call bluewery#hi('Sneak',      '', s:none_color, s:search_color)
 call bluewery#hi('SneakScope', '', s:none_color, s:search_color)
