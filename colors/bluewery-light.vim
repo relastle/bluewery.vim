@@ -135,6 +135,9 @@ call bluewery#hi('zshVariableDef', '', s:n_cyan, '')
 " For Python
 hi! link pythonRun Comment
 
+" For Markdown
+call bluewery#hi('mkdBlockquote', '', s:n_magenta, '')
+
 " For Vimscript
 call bluewery#hi('vimIsCommand'   , ''     , s:n_cyan , '')
 
