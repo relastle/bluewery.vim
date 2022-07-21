@@ -143,8 +143,9 @@ hi! link pythonRun Comment
 call bluewery#hi('mkdBlockquote', '', s:n_magenta, '')
 
 " For typescript
-call bluewery#hi('typescriptBlock', '', s:n_white, '')
-call bluewery#hi('typescriptCall',  '', s:n_white, '')
+call bluewery#hi('typescriptBlock',               '', s:n_white, '')
+call bluewery#hi('typescriptCall',                '', s:n_white, '')
+call bluewery#hi('typescriptDestructureVariable', '', s:n_white, '')
 
 " For Vimscript
 call bluewery#hi('vimIsCommand',     '', s:n_cyan,    '')
