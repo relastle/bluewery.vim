@@ -160,6 +160,9 @@ call bluewery#hi('ALEErrorSign',     '', s:n_red,     '')
 call bluewery#hi('ALEError',         '', s:none_color,  '')
 call bluewery#hi('ALEWarning',       '', s:none_color,  '')
 
+" For coc.nvim
+call bluewery#hi('CocMenuSel', '', '', s:n_blue)
+
 " For Nvim diagnostic
 call bluewery#hi('DiagnosticError', '', s:n_red,     '')
 call bluewery#hi('DiagnosticWarn',  '', s:n_yellow,  '')
