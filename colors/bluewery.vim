@@ -147,6 +147,16 @@ call bluewery#hi('typescriptBlock',               '', s:n_white, '')
 call bluewery#hi('typescriptCall',                '', s:n_white, '')
 call bluewery#hi('typescriptDestructureVariable', '', s:n_white, '')
 
+" For Typescript react
+call bluewery#hi('tsxTag',                '', s:n_cyan, '')
+call bluewery#hi('tsxCloseTag',           '', s:n_cyan, '')
+call bluewery#hi('tsxComponentName',      '', s:b_cyan, '')
+call bluewery#hi('tsxTagName',            '', s:b_cyan, '')
+call bluewery#hi('tsxCloseTagName',       '', s:b_cyan, '')
+call bluewery#hi('tsxCloseComponentName', '', s:b_cyan, '')
+
+
+
 " For Vimscript
 call bluewery#hi('vimIsCommand',     '', s:n_cyan,    '')
 
