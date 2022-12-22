@@ -171,13 +171,15 @@ call bluewery#hi('ALEError',         '', s:none_color,  '')
 call bluewery#hi('ALEWarning',       '', s:none_color,  '')
 
 " For coc.nvim
-call bluewery#hi('CocMenuSel', '', '', s:n_blue)
-call bluewery#hi('CocPumMenu', '', s:n_magenta, '')
-call bluewery#hi('CocPumSearch', '', s:n_cyan, '')
-call bluewery#hi('CocPumDetail', '', s:n_green, '')
-call bluewery#hi('CocPumShortcut', '', s:b_cyan, '')
-call bluewery#hi('CocPumDeprecated', '', s:n_red, '')
-call bluewery#hi('CocPumVirtualText', '', s:b_red, '')
+call bluewery#hi('CocMenuSel',        '',          '',          s:n_blue)
+call bluewery#hi('CocPumMenu',        '',          s:n_magenta, '')
+call bluewery#hi('CocPumSearch',      '',          s:n_cyan,    '')
+call bluewery#hi('CocPumDetail',      '',          s:n_green,   '')
+call bluewery#hi('CocPumShortcut',    '',          s:b_cyan,    '')
+call bluewery#hi('CocPumDeprecated',  '',          s:n_red,     '')
+call bluewery#hi('CocPumVirtualText', '',          s:b_red,     '')
+call bluewery#hi('CocFloating',       '',          s:b_white,   s:b_green)
+call bluewery#hi('CocFloatActive',    'undercurl', s:n_cyan,    '')
 
 " For Nvim diagnostic
 call bluewery#hi('DiagnosticError', '', s:n_red,     '')

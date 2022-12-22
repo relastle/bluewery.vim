@@ -5,47 +5,17 @@
 " Last Modified By  : Hiroki Konishi <relastle@gmail.com>
 "
 function! bluewery#hi(item, attr, fg_color_name, bg_color_name) abort
-  if empty(a:attr) && empty(a:bg_color_name)
-    execute printf(
-      \ 'hi! %s ctermfg=%d guifg=%s',
-      \ a:item,
-      \ a:fg_color_name[0],
-      \ a:fg_color_name[1],
-    \ )
-    return
+  let l:stmt = printf('hi! %s', a:item)
+  if (!empty(a:fg_color_name))
+    let l:stmt = printf('%s ctermfg=%d guifg=%s', stmt, a:fg_color_name[0], a:fg_color_name[1])
   endif
-
-  if empty(a:attr) && empty(a:fg_color_name)
-    execute printf(
-      \ 'hi! %s ctermbg=%d guibg=%s',
-      \ a:item,
-      \ a:bg_color_name[0],
-      \ a:bg_color_name[1],
-    \ )
-    return
+  if (!empty(a:bg_color_name))
+    let l:stmt = printf('%s ctermbg=%d guibg=%s', stmt, a:bg_color_name[0], a:bg_color_name[1])
   endif
-
-  if empty(a:attr)
-    execute printf(
-      \ 'hi! %s ctermfg=%d guifg=%s ctermbg=%d guibg=%s',
-      \ a:item,
-      \ a:fg_color_name[0],
-      \ a:fg_color_name[1],
-      \ a:bg_color_name[0],
-      \ a:bg_color_name[1],
-    \ )
-    return
+  if (!empty(a:attr))
+    let l:stmt = printf('%s gui=%s term=%s', stmt, a:attr, a:attr)
   endif
-
-  execute printf(
-    \ 'hi! %s ctermfg=%d guifg=%s ctermbg=%d guibg=%s gui=%s',
-    \ a:item,
-    \ a:fg_color_name[0],
-    \ a:fg_color_name[1],
-    \ a:bg_color_name[0],
-    \ a:bg_color_name[1],
-    \ a:attr,
-  \ )
+  execute l:stmt
 endfunction
 
 function! bluewery#make_gui_term_pair_colors(fg_color, bg_color)
